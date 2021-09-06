@@ -1,34 +1,21 @@
 #include "Game.hh"
 #include "Constants.hh"
 #include "Rectangle.hh"
-#include "Cara.hh"
-#include "Menton.hh"
-#include "Cuello.hh"
-#include "Hombros.hh"
-#include "Pecho.hh"
-#include "BrazoDer.hh"
-#include "BrazoIzq.hh"
-#include "PiernaDer.hh"
-#include "PiernaIzq.hh"
-#include "OjoDer.hh"
-#include "OjoIzq.hh"
-#include "Banda.hh"
-#include "Cinturon.hh"
 
 Rectangle* rectangle{new Rectangle(100, 25, 300, 100, sf::Color::Black)};
-Cara* cara{new Cara(100, 25, 300, 125, sf::Color::Yellow)};
-Menton* menton{new Menton(100, 25, 300, 150, sf::Color::Black)};
-Cuello* cuello{new Cuello(20, 30, 340, 175, sf::Color::Black)};
-Hombros* hombros{new Hombros(125, 25, 290, 200, sf::Color::Black)};
-Pecho* pecho{new Pecho(75, 130, 315, 200, sf::Color::Black)};
-BrazoDer* brazoder{new BrazoDer(25, 80, 265, 200, sf::Color::Black)};
-BrazoIzq* brazoizq{new BrazoIzq(25, 80, 415, 200, sf::Color::Black)};
-PiernaDer* piernader{new PiernaDer(30, 90, 315, 325, sf::Color::Black)};
-PiernaIzq* piernaizq{new PiernaIzq(30, 90, 360, 325, sf::Color::Black)};
-OjoDer* ojoder{new OjoDer(15,15, 320, 129, sf::Color::Blue)};
-OjoIzq* ojoizq{new OjoIzq(15,15, 360, 129, sf::Color::Blue)};
-Banda* banda{new Banda(100, 10, 300, 115, sf::Color::Red)};
-Cinturon* cinturon{new Cinturon(75, 10, 315, 300, sf::Color::Red)};
+Rectangle* rectangle2{new Rectangle(100, 25, 300, 125, sf::Color::Yellow)};
+Rectangle* rectangle3{new Rectangle(100, 25, 300, 150, sf::Color::Black)};
+Rectangle* rectangle4{new Rectangle(20, 30, 340, 175, sf::Color::Black)};
+Rectangle* rectangle5{new Rectangle(125, 25, 290, 200, sf::Color::Black)};
+Rectangle* rectangle6{new Rectangle(75, 130, 315, 200, sf::Color::Black)};
+Rectangle* rectangle7{new Rectangle(25, 80, 265, 200, sf::Color::Black)};
+Rectangle* rectangle8{new Rectangle(25, 80, 415, 200, sf::Color::Black)};
+Rectangle* rectangle9{new Rectangle(30, 90, 315, 325, sf::Color::Black)};
+Rectangle* rectangle10{new Rectangle(30, 90, 360, 325, sf::Color::Black)};
+Rectangle* rectangle11{new Rectangle(15,15, 320, 129, sf::Color::Blue)};
+Rectangle* rectangle12{new Rectangle(15,15, 360, 129, sf::Color::Blue)};
+Rectangle* rectangle13{new Rectangle(100, 10, 300, 115, sf::Color::Red)};
+Rectangle* rectangle14{new Rectangle(75, 10, 315, 300, sf::Color::Red)};
 
 Game::Game()
 {
@@ -87,19 +74,19 @@ void Game::Render()
 void Game::Draw()
 {
   window->draw(*rectangle->GetShape());
-  window->draw(*cara->GetShape());
-  window->draw(*menton->GetShape());
-  window->draw(*cuello->GetShape());
-  window->draw(*hombros->GetShape());
-  window->draw(*pecho->GetShape());
-  window->draw(*brazoder->GetShape());
-  window->draw(*brazoizq->GetShape());
-  window->draw(*piernader->GetShape());
-  window->draw(*piernaizq->GetShape());
-  window->draw(*ojoder->GetShape());
-  window->draw(*ojoizq->GetShape());
-  window->draw(*banda->GetShape());
-  window->draw(*cinturon->GetShape());
+  window->draw(*rectangle2->GetShape());
+  window->draw(*rectangle3->GetShape());
+  window->draw(*rectangle4->GetShape());
+  window->draw(*rectangle5->GetShape());
+  window->draw(*rectangle6->GetShape());
+  window->draw(*rectangle7->GetShape());
+  window->draw(*rectangle8->GetShape());
+  window->draw(*rectangle9->GetShape());
+  window->draw(*rectangle10->GetShape());
+  window->draw(*rectangle11->GetShape());
+  window->draw(*rectangle12->GetShape());
+  window->draw(*rectangle13->GetShape());
+  window->draw(*rectangle14->GetShape());
 }
 
 //Keyboard, joysticks, etc.
