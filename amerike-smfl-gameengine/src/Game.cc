@@ -2,20 +2,20 @@
 #include "Constants.hh"
 #include "Rectangle.hh"
 
-Rectangle* rectangle{new Rectangle(100, 25, 300, 100, sf::Color::Black)};
-Rectangle* rectangle2{new Rectangle(100, 25, 300, 125, sf::Color::Yellow)};
-Rectangle* rectangle3{new Rectangle(100, 25, 300, 150, sf::Color::Black)};
-Rectangle* rectangle4{new Rectangle(20, 30, 340, 175, sf::Color::Black)};
-Rectangle* rectangle5{new Rectangle(125, 25, 290, 200, sf::Color::Black)};
-Rectangle* rectangle6{new Rectangle(75, 130, 315, 200, sf::Color::Black)};
-Rectangle* rectangle7{new Rectangle(25, 80, 265, 200, sf::Color::Black)};
-Rectangle* rectangle8{new Rectangle(25, 80, 415, 200, sf::Color::Black)};
-Rectangle* rectangle9{new Rectangle(30, 90, 315, 325, sf::Color::Black)};
-Rectangle* rectangle10{new Rectangle(30, 90, 360, 325, sf::Color::Black)};
-Rectangle* rectangle11{new Rectangle(15,15, 320, 129, sf::Color::Blue)};
-Rectangle* rectangle12{new Rectangle(15,15, 360, 129, sf::Color::Blue)};
-Rectangle* rectangle13{new Rectangle(100, 10, 300, 115, sf::Color::Red)};
-Rectangle* rectangle14{new Rectangle(75, 10, 315, 300, sf::Color::Red)};
+Rectangle* rectangle{new Rectangle(150, 25, 300, 0, sf::Color::Black)};
+Rectangle* rectangle2{new Rectangle(208, 25, 270, 25, sf::Color::Black)};
+Rectangle* rectangle3{new Rectangle(264, 25, 240, 50, sf::Color::Black)};
+Rectangle* rectangle4{new Rectangle(323, 149, 210, 75, sf::Color::Black)};
+Rectangle* rectangle5{new Rectangle(37, 75, 300, 50, sf::Color::Blue)};
+Rectangle* rectangle6{new Rectangle(37, 75, 410, 50, sf::Color::Blue)};
+Rectangle* rectangle7{new Rectangle(73, 37, 338, 88, sf::Color::White)};
+Rectangle* rectangle8{new Rectangle(150, 25, 300, 125, sf::Color::White)};
+Rectangle* rectangle9{new Rectangle(208, 73, 270, 150, sf::Color::White)};
+Rectangle* rectangle10{new Rectangle(73, 73, 338, 150, sf::Color::Black)};
+Rectangle* rectangle11{new Rectangle(150, 25, 300, 223, sf::Color::White)};
+Rectangle* rectangle12{new Rectangle(73, 37, 338, 248, sf::Color::Red)};
+Rectangle* rectangle13{new Rectangle(30, 30, 240, 223, sf::Color::Black)};
+Rectangle* rectangle14{new Rectangle(30, 30, 478, 223, sf::Color::Black)};
 
 Game::Game()
 {
@@ -65,7 +65,7 @@ void Game::MainLoop()
 
 void Game::Render()
 {
-  window->clear(sf::Color::White);
+  window->clear(sf::Color::Cyan);
   Draw();
   window->display();
 }
